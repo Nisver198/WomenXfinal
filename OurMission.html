@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <title>
+      Our Mission Statement </title>
+
+
+
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+
+
+
+
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+
+
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+
+
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+
+
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+     img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+
+
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+
+
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+
+
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+
+
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+  </style>
+
+
+
+
+
+
+
+
+</head>
+<body style="background-color: rgba(0, 0, 0, .15)">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+  <div class="container py-4">
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">WomenX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="OurMission.html">Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Forum.html">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Famous.html">Prominent Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Donations.html">Donate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3" >
+      <div class="container-fluid py-5" >
+        <h1 class="display-5 fw-bold">Our Mission</h1>
+        <p class="col-md-8 fs-4">This website is designed as a safe space for women around the world to discuss the prejudices they experience in the workplace and society. Historically women have been stereotyped to tend to home affairs and were rarely part of the workforce. In the past few decades, women have been one of the pillars of success in many of the economy’s industries. Despite their many significant successes, women are still alienated from many workplaces. Discrimination within job opportunities and pay with female workers have been really common throughout the world. Our team hopes to spread positivity and support all women who deserve recognition and equal opportunities for their hard work.
+        </p>
+        <p class="col-md-8 fs-4"><img src="https://lh3.googleusercontent.com/pw/AMWts8Df2Ac53E4T1L21Nkw_GDESPxuDy5nzPj3OPcDLOv2ewCl7gtY3b8apqqYccBkIgWOLhrz0oWdniU4GizxluIma_lgIX1Xg57sbG2X3eYSAkFd2B1zfK4QG1Hi5tuQt_wXi2fz0MvMDGXo-9Zzm7trh=w500-h500-s-no" alt="Ada Lovelace" width="img-responsive" height="img-responsive")></p>
+      </div>
+    </div>
+    <h1 class="display-5 fw-bold">Our Team</h1>
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Shriya Bhamidipati</h2>
+          <p> As a rising computer science major she’s motivated to raise awareness for the lack of women in STEM fields. Throughout her life, she has noticed that in all the STEM classes she has taken a part in having more men than women. For example, in her school’s computer science class, around 75% of the class is male, only around 25% is female. The same applies in her physics class. She has also noticed a massive pay gap between males and females, even if they do the same job. She firmly believes that such gender bias should not exist, and is not beneficial to our society today. </p>
+          <img src="https://lh3.googleusercontent.com/pw/AMWts8CwZuA-bqtRdqK7UtuQv8XMjdj0NW4_JWcD6zZewtLSjaYoDi26c5q2XWTQRhEnaY6cVH6cGdvZURM8fq_TVknk0TzI59Z-0iCh8c9nyqLHh0ntCqYuy3TsX_CbifBgouXeTNRy8jrwxRp4N1f9KqPq=w1232-h1642-s-no?authuser=0" alt="Ada Lovelace" width="50%" height="60%")>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Nisha Vernekar</h2>
+          <p>An aspiring software engineer interested in dissolving the disparate treatment between men and women in the tech industry. Since middle school she has noticed a lack of women in more STEM related courses which were concerning to her. In many bi companies she has noticed a lack of women in leadership positions and leading big projects. Her goal is to establish a safe and fair space for all women in tech and in other industries. She hopes to inspire young girls to work hard to achieve their dreams of becoming successful in life.
+          </p>
+          <img src="https://lh3.googleusercontent.com/WsMio3nkCwmhTaycqPZmzuCtMKW0XDgupC7IJcomcVVY1sZBhYHbbY8t07jo7FZHm6xg-dIT-0oxG1hZGAKPK-KlGYrzCrW5PZNkZC7PUHp038VMmKjBk__xthSNAULtE3bqLki9l511UFxSi_RVGiWLFi_BRS_JZ_75nMayj4PXMa_-QnJt8wgPSK96jL3GtgL5DOe-b56FapcvsC3nteMGNg9NNiInl5HI_bX0YLP-2Bu8Mzk7LfZuaEu6BuYb3jioTMJJcKxS2j0TZw4Q4g0xwOz4jWs1JHjqMA46w7wkwuKMPQQZT6m6tAG10rnxHufXOTslAWTFo60Qjrz6Yox2K8pdb6s7b05bCNwSAFQIdy8-AuooCceBYVx3TLSKddi1w8QGbyYFb1nGNmNM8stJ-naMyhB9V1XHQC80fShJoMao4-vHLjLdsJ7bb5j4FM3xOWQo42CG_Rn8DKU15pqHkpZL40wAi2DmD6l6DqwaQKw5ct1mt1No3zfXbuWUCFhl4o-Q7y9whVuDvv064mnJOJ0itdYWS70TV0Oh35WEEDqvgEp8ZZbz3RgS_jXs7pSdloQaWX_Uf3TEWf-geSqCwlT-hoodW44s48fYCB9cUYoHQPicpX1V4EeORPy40NNDpkZAB3oO3MGNIwC7PKip1faY9ZQ1DC2QWvZXkZ6KL7WknzxWRUx6fYOLBHaWKRqLaM9axuXHD7Vm8kOibolWkMvw0gfp4Xu4G7p5sVxWJPs2LvEAuYLIjzIScX0NtvUbwAalhAPceGnoCQQ8YyBkltl-bAfP3dmXZvvJBBOAxDBUy6cjFwauta9qa_JHDsj8_dKrcAK7jDktZ74bDEyq5bNASytDnT66PcFYUe-UhUtm_ZjFAmSTV6jfbHCppSrXC89CkfSGFHa5rPVU-9oUt2PA9ATmBQn59FDjG9N_=w327-h508-s-no?authuser=0" alt="Ada Lovelace" width="40%" height="60%")>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Ananaya Agarwal</h2>
+          <p>As a computer science major, she is passionate about technology and wants to bridge the gender gap in STEM fields. She believes in empowering and supporting women in tech through networking, mentorship programs, and connecting with like-minded individuals to create a more inclusive and diverse tech industry. She is committed to doing their part to make this a reality and excited to be a part of this movement.
+          </p>
+          <img src="https://lh3.googleusercontent.com/p0FxPCHoyYsnp7P3FiPruIIY3lm7-V2jUV6e_1MZXSG9ig6ki0ufJis7K5Tsy9A7rGARk38i85kY4SbVBdpLsWKzCYfteIPqIyl9VkqjIGzjiR1RqvBK_mt5GLIs6mBbJs6kMtXrz-34CP_nR66HvkS_aixVHS7xQmOVE9ew3Z51mN4Z5WXtmhh9UkOVSZD9JF9dkBtMdy3No5GDRLbBhAFRPlIZ3-WckPhhsfOHnJ1LFsLtaaRko-ulF1o02x_QMUn_9uws9yTNfIM11oBQ9_o0DsyZDKo1HA1t4VpI-vpiVwCdSkeif1KdU0r0y_uCqHKtuLKVWSxf1-GOypSr7fCa0KGjpgxGDqTQrIAo72fb92i85JzoL6dn5OXDXh7rLs7gj6-fQSD6J9rOV6G10rkAF-0uAFMpM_oZuNFG6DRNwV6Y0loIUwCJ6wmFXxxyRlbnNvvHGPqjGjttQoWgQrRqcbz6699UlzaFpCzXohyHj6BylM7Nf55_Cchpw2m5ZaoyeFyZ1RDiJez8BC5GnWGYwENCB4RvYlRnA7YovMNxhpaohRDHLzkKErEnWfWx1Xf3AOhzFOKtV5eEjwWZ6JNYEhPIF7rUFk4YB3JzN6TPKF2nWNoiVpn72j0jevQL6nPRo75PlFi0hGoqkGYBSGcF882ng4bNWrE9AbSOTi4iM85xEEB5F3s61fcUXzxn0gwPcL3yLQMOfQQKum_M6S5BSj6vcDqlnQKeoQV9DqHjLL0zFoKHXgv8D0fMq_PZrrt9Y8u17WhL8hPQynzRlREo_SsjpqEgm-VvnWk3beBHOD-HalaiUm4apGnIkrbjFwU5RKhlETHWt4d3n-6Vvz206V7q3zFu5MnMxktI6ayZzudkLWxe3KEPx_sHCfFHtsp2jRvPRIxfD42odX-nXLlgPQpTWkPmAVazqNYPKmvf=w924-h1642-s-no?authuser=0" alt="Ada Lovelace" width="40%" height="60%")>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Nimrit Dhanjal</h2>
+          <p> With a unique background in both business and physics, and a passion for equality and a drive to make a positive impact, she is committed to helping close the gender pay gap and promote diversity and inclusion in the workplace. Taking on two subjects dominated and often taught by men, she hopes to take charge and inspire women around the globe to take matters into their own hands.
+          </p>
+          <img src="https://lh3.googleusercontent.com/pw/AMWts8ARV0W8Jj8HcQwsPbWWs5wjj6S2DchGXR8T93O4kmv_R-_TJLmutW7IRbkwKJQg3iPWN1G0-8la3SnPjCfYqfT-AxQjKw2r0cFI46EQxDl5Srl-IUXYsgUk10qgJSUxWvulgwwYBr2nYZrrwY8UXPp5=w598-h1083-s-no?authuser=0" alt="Ada Lovelace" width="40%" height="60%")>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+    </footer>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+
+
+
+</body>
+</html>
+
+
+
+</title>
+</head>
+<body>
+
+</body>
+</html>
