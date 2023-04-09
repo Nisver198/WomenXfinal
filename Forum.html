@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <title>
+      <!doctype html>
+      <html lang="en" data-bs-theme="auto">
+      <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+
+
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.111.3">
+      <title>Blog Template · Bootstrap v5.3</title>
+
+
+
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+
+
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+
+
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+
+
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+
+
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+
+
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+
+
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+
+
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+
+
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+  </style>
+
+
+
+
+
+
+
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="blog.css" rel="stylesheet">
+</head>
+<body style="background-color: rgba(0, 0, 0, .15)">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<div class="container">
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">WomenX</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="OurMission.html">Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Famous.html">Prominent Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Donations.html">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Tell us about your experience!</h1>
+      <p class="lead my-3">What have you heard or seen about the lack of participation of women in engineering/STEM fields? If you identify as a woman or non-binary, what is your experience working in STEM fields?</p>
+      <p class="lead mb-0">This is a safe space for all who share, and is a chance for you to give us your experience :)</p>
+    </div>
+  </div>
+
+
+
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Tania Towry </h3>
+          <div class="mb-1 text-body-secondary">March 28</div>
+          <p class="card-text mb-auto">“I had been working at a tech company for two years and had just received a promotion. However, when I received my new offer, I was shocked to see that my salary was only slightly higher than my previous one, despite the added responsibilities. I knew that I had negotiated just as well as my male colleagues, and I couldn't help but feel that my gender had played a role in the pay gap.”</p>
+        </div>
+        <br>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://lh3.googleusercontent.com/pw/AMWts8Cgfb00XKfTR03b_ONxvwIUBMNghK2aLuHLqyok1vzb5hF_tuoyvKc30-lyL0XrDy-HkxveRQkzoDiydv4FCT2d-dDVdfyI7clQTg3ZSw_Fl9OloCJIZ9bPwNmIvqYCeSdL6KsFqpNHR1rTQnqom7zh=w742-h1014-s-no?authuser=0" alt="Ada Lovelace" width="40%" height="100%" class="center")>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">World</strong>
+          <h3 class="mb-0">Alisha Kalashi </h3>
+          <div class="mb-1 text-body-secondary">Nov 11</div>
+          <p class="card-text mb-auto">While it was disheartening to experience the pay gap firsthand, I'm proud of the action we took to address it. It's crucial that we continue to speak up and fight for equal pay, not just for ourselves, but for all women in STEM and beyond. This would surely benefit future women in STEM along with other women of color in STEM. I would not want future women to go through the experiences I have dealt with in this field. I wholeheartedly support this organization.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://lh3.googleusercontent.com/M_s-jjuXojcpFCp9jdK5-4fBPLxfsiwJKI-CwmJ_6vy9Sc16BiU6hZnegZXzI-otEHX78oxmHtWJjPwhEt_Q3eXsUhK1QlVUrZRWJFKvoBrI6OhavzctMB9t5e-s4PLvDXjYmbC_i8KH9776MkgFiMhOdK-nfeR1kehA4UZX8NBk_EXHavHe7l_P1F-qEmC-Wyta_0nX6IZzuMkESAh5NTRI9-WAGvlKheV5ePP1CieOxAC-Lnzr-wRaOEE4b06z4MDjRV9UnONOtxIIWUOOGQxJA3X44EwPkr-gOJ6Ydnexj3ngiI536Gs-sfFs9_u28NVOGeNaYw3OKeGdmct0YNOgkPNgVfXo0niNEn9tNd0gQhoxwS8nhJPIkHwcxiLVTPkEDBUxEMkYVML_mqysgQ_TIAXzEv2qY_9TrPZVNaks0pnUgk8q3AJwrfTWWtpf0IvMz0gYRSITQ6nefY-G9XNeMe9f4wHD_e9k3mUsbBPO4WLxZCFOt4_QbPpvFexdsG4OO1cL3ECj4XVBZbBIkVXv_qAR0fdgiWrk-h9Z2rEof081ydF42AK464cW7Z6QyaitEwxpmHg_sbxzEBrtr64a2rtAUK0zYHtesQXIyOIaNLJXktJx6neGt5We-p7_nYKsojh08ltrocgj6InMAuTalXjuVNUzNnhufDvr0bcMH6yOVAJY5baZoE6Gaj1s56En7_nq5fWgTxqdIQsfklreBs0O1dbOCZBsYT3utsS1XO5H1oFis0FYAYGJs_QmZJ-qjwoSFSMxHaUpF7gaQMBcEq2M3--5XbTZFQn9ue1AXFIo2cVjEOmflU9mVC4aS2hQ5DBYtthkYmREI0T2TBr_mBZUHsLs_-fSPKq_Uj6vIT_w_nzB97FgyQH26a8eaiubk0BhzIUppmY0z0sw1Qot5LrdJrrrYYyJIUJ1UGBS=w856-h998-s-no?authuser=0" alt="Ada Lovelace" width="40%" height="100%" )>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Begin Mailchimp Signup Form -->
+
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+  <div id="mc_embed_signup">
+        <form action="https://gmail.us21.list-manage.com/subscribe/post?u=4daa64ce13d89d1c8ef38a2b2&amp;id=37c2e8b414&amp;f_id=002295e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <h2>Your Experience</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+    <div class="mc-field-group">
+          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+    </label>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+    </div>
+    <div class="mc-field-group">
+          <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+    </label>
+          <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>
+    </div>
+    <div class="mc-field-group">
+          <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+    </label>
+          <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" required>
+    </div>
+    <div class="mc-field-group">
+          <label for="mce-MMERGE6">Tell us about your experience...  <span class="asterisk">*</span>
+    </label>
+          <input type="text" value="" name="MMERGE6" class="required" id="mce-MMERGE6" required>
+    </div>
+    <div class="mc-field-group">
+          <label for="mce-MMERGE7">Industry </label>
+          <input type="text" value="" name="MMERGE7" class="" id="mce-MMERGE7">
+    </div>
+        <div id="mce-responses" class="clear foot">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4daa64ce13d89d1c8ef38a2b2_37c2e8b414" tabindex="-1" value=""></div>
+            <div class="optionalParent">
+                <div class="clear foot">
+                    <input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class="button" style="background-color: grey" >
+                </div>
+            </div>
+        </div>
+  </form>
+  </div>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <!--End mc_embed_signup-->
+
+    </div>
+
+
+
+
+
+
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+  </footer>
+
+
+
+
+
+
+      
+<br>
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+
+
+
+</body>
+</html>
+
+
+
+</title>
+</head>
+<body>
+
+</body>
+</html>
