@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head><script src="../assets/js/color-modes.js"></script>
+
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.111.3">
+  <title>WomenX</title>
+
+
+
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+
+
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+
+
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(149, 91, 214, 0.5);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(149, 91, 214, 0.5), inset 0 .125em .5em rgba(149, 91, 214, 0.5);
+    }
+
+
+
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+
+
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+
+
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+
+
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+
+
+
+    .btn-bd-primary {
+      --bd-violet-bg: #6610f2;
+      --bd-violet-rgb: 140, 44.062154, 249.437846;
+
+
+
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6610f2;
+      --bs-btn-hover-border-color: #6610f2;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #6610f2;
+    }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+  </style>
+
+
+
+
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+<body style="background-color: rgba(0, 0, 0, .15)">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">WomenX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="OurMission.html">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Forum.html">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Famous.html">Prominent Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Donations.html">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<main>
+
+
+
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://assets0.ello.co/uploads/asset/attachment/4037021/ello-optimized-a8665ea7.gif" alt="Computer Man" style="width:1500px;height:900px;">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1> Women Empowerment </h1>
+            <p>Use this platform to share common experiences amongst women in STEM fields. </p>
+            <br>
+            <br>
+            <p><a class="btn btn-lg btn-primary" href="Forum.html">Read our forum</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.gifer.com/J4o.gif" alt="Computer Man" style="width:1500px;height:700px;">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Closing the Pay Gap</h1>
+            <p>Yes, a pay gap is still common in today's world amongst men and women, even if the same job is done. </p>
+            <br>
+            <br>
+            <p><a class="btn btn-lg btn-primary" href="OurMission.html">Read our mission</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.tenor.com/Px_PMiYXFIMAAAAC/black-swirl.gif" alt="Computer Man" style="width:1500px;height:700px;">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Donate Now!</h1>
+            <p>Do your part by donating to support our mission in women in STEM! </p>
+            <br>
+            <br>
+            <p><a class="btn btn-lg btn-primary" href="Donations.html">Donate here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+
+  <div class="container marketing">
+
+
+
+
+    <!-- Three columns of text below the carousel -->
+
+
+
+
+
+
+
+
+    <!-- START THE FEATURETTES -->
+
+
+
+
+    <hr class="featurette-divider">
+
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Representation by Gender <span class="text-body-secondary"></span></h2>
+        <br>
+        <p class="lead">According to this graph, overall men hold higher positions more frequently than women do in the workforce. Study the graph provided, do you think this is fair? </p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://lh3.googleusercontent.com/diuJin1t_DlVZC4iRjfDle-TsxxYVhjdCGA1s_0m9n9xHX_gOhBtNzuz-nA9VDDNwSWoqKwqIJaiZhrozuYwHg5tJm_FVVams7CUvAQeibV7To8PCSPqxzkF2gT7UfV5oiaR-acZjQZSAiKlWyoIh9cPtWgP8n5AAxE5_nT5Ci9ndSs1zgGaH-IMM7OGzUYDFxzVScL_USe3-_BUBvR4p9xmdL0sABWRleF4PeYOb0AZjIcUQvqQRwNWB_ny1QK_9i0l5KzS7Q9s9akPc-Y8hflxGtMymn0SQoYQ5SiaoOSgy4Ogkngq3UqWrKiRJLLQDA2mFaxaQGboHYLTN1xsQmOb7nTN8X8_WE-3gJs4Q7pNrPffvvbJ9HRB63d3TDxlMxi9-ooaR6t3JXo7xNmN8_PJJY-LcL6t0UetehfCh_DoZquU7PPFonQdjAD15UfEHHX6tddt2JcmlDu0SS5smxS_62rqp1cv8yac5BbCnQWDRnLYbOeiSMtDUBUOUAJCUeRAUqvfMharxF6oHqvTbnxcQDGuigLV77K2XpdgZImZ-d5A7vhMDDz-GClOzxaSAht4krHVuhBfGv_SnPkswU4WfaDcS5MYDxzwwEgvx__QbHfuW1FYvvFb2n_pnwUoEh7fj4GODYAcKdLOdFTvTWuyGXtybN4cj6v7SHt4II-2WYuiOy9P6TgWLaFoiiw-p9U56yn0exukyVi-lLGl8Rb2VDVxzdCe4okBGwSg2_At8qU8dZHNgi5DnoZUCD0YASOYUgMjtbR_BEQmN4OVlt2j_0YcbsL2g-aW8xom6m20LDwE6WGB6Na-JMEM3KhPCNnhigsFp8iT46K8UeEswIfgN8ifM8D_nIj4-qyWLdhQKmdY9q4dnlM9Mo4hYPHQ22kaGkzvy3OZJRdldc9_gvDQjxInXdNXtvi5PwQRq4qS=w1154-h1110-s-no?authuser=0" alt="Ada Lovelace" width="100%" height="100%" )>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <hr class="featurette-divider">
+
+
+
+
+
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1"> Representation by Race <span class="text-body-secondary"></span></h2>
+        <br>
+        <p class="lead">If we break it down further, race is at play even when it comes to inequality of pay. People of color statistically make less than people who are white, especially in more traditional, in case of the US, Southern places. </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://lh3.googleusercontent.com/dTBYss2XVVd2aZz7I3ynK6cfiX39jwHtZrMvvI7X00z17PGEjgPtRgmL88xeFxhNbj0vbwwQiZxyiBX2b1k1JzpnzQjG2a3ExlgBkYKr6zcVgQ7sGDsZpG2qzcXsqhh0Y8H47MoP_GqoEQLwZ5Lbk__J1QCGLtn7fddlmYQKvTkWgPREJmd0cjAnZnVIpKnEYhLyt4MhpbAjTZdy7ROqAo5C69daYiymjtEc_gzxqt6j_4-IJXvJqAlNX98B8AqJg9tutPVqdjl-ni6XkNBhS14V5rjjdcRR-QwzeqeTQ0N5cDEfTzVS0-qFRYnQJOjaK7eLVMPsUd73akFuAASsdRuLIOUO9nH1ME9ZTMwG6g5uU03mxVuxiuDxbhFBNCMRXv1gYMtYxAlgDb4vHY_huWMP-q-SkcpfpJ52joKIehu0g-sezJSag6ed-Ff6qRRr1F7Z0NQEQR0gL0qGQMA1xbSrgGEUqQwPFgSHW9z4asAjKzETE_Gf4SlDyvKBTb-LfTaW-k4g9V56LAeTkgqh0JSXiN0WOynoW8DBgE0-ICQLFP0BdB29TjtGoqUUHwNIjr1g4eQk-2yDtE2WQhI3D3OmW6-wBWF7Py35AgRF-ZaY0S0oErU2U4quXVzAmRrZb_XUyLq0M-WQOiowIPNFoh1hU_WW0C5Eqw_LXV_aTOFmOx2cXc2Q-1knQ5nuwJDV_ut6p8x3zo20GXiMrd-SXOk8D9AQT2kYx70Z4jtMe5D8d2R6ieqNXv_VALxeXOdhoDIfMo5kS4Dgr7LnMLknZpLtwKhFfi8DJjvto1jWT_qSFBcv00BuXi81jIefE2OU1dypt1BeEhoKekEojlOsdFgN9HLCIdggQDWtQdoEjq8WpArpQ18Xw0P6hqCFkSaquRKyhSe-VuP02MzkJUWI_bv3EAaEDJ54jbaKQBJQ5xIp=w1386-h758-s-no?authuser=0" alt="Ada Lovelace" width="100%" height="100%" )>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <hr class="featurette-divider">
+
+
+
+
+
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"> Lobbying & What it does <span class="text-body-secondary"></span></h2>
+        <br>
+        <p class="lead"> Lobbying to organizations like Emily's List is a key part in advancing publicity on matters like equal pay. Since 1949's repeal of the Equal Pay Act (EPA), no legislative actions have been enacted to advance the gap.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://lh3.googleusercontent.com/vLK5l7UPXkxotXmzr5s4IiLKXmlmOG6UtOkiygOrGIpocodPBwYN99vU_ly-YwKkg70xQ_-YILkhivJT6irLIZMNBVXq30VTuhrRdeL9t8zaw_YMvGr9l26OHRzajUqzSkMa8a_S0C2velJibNXnhE1BttiAXUxuu8cAgMgBPMAEfFZufh9dZ98ojdJ6d5FACKAJqfZhcZgqVeqbKcsM0NV_GzlBy8SKohaAMBZed2E4vjKiSO3DBOPOj26t0n78ZRhDBJklfRz2Bwvnmh0UPk6rqYXYEwMrH0Cuw8Pm5GBPxj0h6EtsJvB1NkS8HkZWKzHfUR_LUe3O2LG21epEbFm7Qn96enxTqEDeikNmaOMYRzRi5HHR3B8xnpELdFq5GN5KI98SVKEXodrrqb0O_dPdsaFfepd-INxNRbuFswLrghRLCNVtZlIpbh_hmfG90B1uDw7S09U1J1gq42a67LrtAELmBeeQin3qcDpvkBWEpgBMj5sb_wTP3OQXs58PXFMyQlTQ0kyh_df5-09FREl2GaEPwFh_5nL_EdcN_3y7TlHqfiWYXEFuk_m68VxyhhALPgobVK_xd91XTbNGB9eug-HDRRz7XUTEmjCDLwRs6I25BKot-_AorOjaDpblrJ5EGKsxpxHoZH3iIKwhdLvuuLMDSrUg2POcHdXVGrY5C8IDv6a7g71QVLPo0gIDzai8jnOFP6tVR54CrhSeWEjFuROq5BQT_if6o7AafsIo5LkneM6rIyz0myutCJtueGTvEUqVv7mszCwyu3xjlJ5Ov9APFQx0QBgtRm0qQTBIl-PDRnjOFJ0mYRKBx-n87D79qzO8TTL4B8bYCZBOR8G4OokQdmXFJLmpPBjuBpjxY0F_4mWE-c5mb7e4gPo26vHXa1rbClkUi7xApraZ-YLa4zkIAsvpawJLA8C8zf9S=w237-h124-s-no?authuser=0" alt="Ada Lovelace" width="100%" height="100%" )>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <hr class="featurette-divider">
+
+
+
+
+
+
+
+
+    <!-- /END THE FEATURETTES -->
+
+
+
+
+
+
+
+
+  </div><!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+  </footer>
+</main>
+
+
+
+
+
+
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+
